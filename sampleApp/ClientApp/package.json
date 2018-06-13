@@ -1,5 +1,5 @@
 {
-  "name": "capp",
+  "name": "ClientApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,6 +36,14 @@
     "typescript": "^2.9.1"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.ts"
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
   }
 }
